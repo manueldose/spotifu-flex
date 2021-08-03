@@ -1,0 +1,44 @@
+@import './slider.css';
+@import './player-controls.css';
+@import './playerPlayback.css';
+@import './playerVolume.css';
+@import './nowPlaying.css';
+
+.player {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem;
+  /* margin-block-start: 5rem; */
+  /* border-top: 1px solid red; */
+  box-shadow: inset 0px 1px 0 var(--gray30);
+}
+
+.player > * {
+  /* border: 1px solid red; */
+  flex: 1;
+}
+
+.player-control {
+  display: flex;
+  border: none;
+  padding: 0;
+  background: none;
+  color: var(--gray10);
+  font-size: 1rem;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+
+.player-playerVolume {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+@supports not(gap: 1rem) {
+  .player-playerControls {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
+}

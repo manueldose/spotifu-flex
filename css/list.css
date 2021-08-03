@@ -32,3 +32,9 @@
   transition: color .2s;
 }
 
+@supports not(gap: 1rem) {
+  .list-item {
+    margin-bottom: .5rem;
+  }
+}
+

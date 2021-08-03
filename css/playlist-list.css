@@ -1,0 +1,42 @@
+@import './playlist-a.css';
+@import './playlist-b.css';
+
+.playlistList {
+  /* border: 1px solid red; */
+}
+
+.playlistList-top {
+  padding-block-end: .5rem;
+  padding-block-start: .5rem;
+  margin-block-end: 1rem;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.playlistList-title {
+  font: var(--headline1);
+  color: var(--white);
+  margin: 0;
+}
+
+.playlistList-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+}
+
+.playlistList-container > * {
+  flex-shrink: 0;/*cajas de naruto no disminuyan*/
+}
+
+@supports not (gap: 1rem) {
+  .playlistB {
+    margin-right: 1rem;
+  }
+  .playlistB:last-child {
+    margin-right: 0;
+  }
+}

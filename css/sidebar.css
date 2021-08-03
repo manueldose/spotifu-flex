@@ -12,3 +12,16 @@
   /* padding-block-end: 1.5rem; */
   /* inline-size: 200px; */
 }
+
+
+@supports not(gap: 1.5rem) {
+  .logo {
+    margin-bottom: 1.5rem;
+  }
+  .menu {
+    margin-bottom: 1.5rem;
+  }
+  .list {
+    margin-bottom: 1.5rem;
+  }
+}
