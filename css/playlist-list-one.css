@@ -1,0 +1,122 @@
+@import './playlist-a.css';
+@import './playlist-b.css';
+
+.playlistList {
+  /* border: 1px solid red; */
+
+
+}
+
+.playlistList-top {
+  margin-block-start: 5.43rem;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.playlistList-subtitles {
+  text-align: center;
+  /* border: 1px solid red; */
+  padding: 1rem;
+}
+
+.playlistList-subtitle {
+  font: var(--baseFont);
+  color: var(--white);
+  margin: 0;
+}
+
+
+.playlistList-title {
+  font: var(--headline2);
+  color: var(--white);
+  margin: 0;
+}
+
+.playlistList-control {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playlistList-control2{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.playlistList-tracks {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+
+.playlistList-container-mid {
+  display: flex;
+  gap: 25rem;
+  /* overflow: auto; */
+  /* padding: 1rem; */
+  padding-inline-start: 1rem;
+  /* margin-block-start: 5rem; */
+  /* border-top: 1px solid red; */
+  /* box-shadow: inset 0px 1px 0 var(--gray30); */
+}
+
+/* .playlistList-container-mid > * {
+  flex-shrink: 0;   cajas de naruto no disminuyan
+} */
+.playlistList-container-mid > * {
+   flex-shrink: 0;   /*cajas de naruto no disminuyan */
+}
+
+/* @supports not (gap: 1rem) {
+  .playlistB {
+    margin-right: 1rem;
+  }
+  .playlistB:last-child {
+    margin-right: 0;
+  }
+} */
+
+
+@supports not(gap: 25rem) {
+  .layout-block {
+    margin-inline-end: 25rem;
+  }
+  .playlistA-mid {
+    margin-inline-end: 25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .playlistList-container-mid {
+    gap: 5rem;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  .playlistList-container-mid {
+    gap:7rem;
+  }
+}
+
+@media screen and (min-width: 1445px) {
+  .playlistList-container-mid {
+    gap: 23rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .playlistList-container-mid {
+    gap: 23rem;
+  }
+}

@@ -1,0 +1,33 @@
+.nowPlaying-mid {
+  /* border: 1px solid red; */
+  display: flex;
+
+  /* gap: .5rem; */
+}
+
+.nowPlaying-mid-details {
+  display: flex;
+  gap: .25rem;
+  align-items: center;
+}
+
+.nowPlaying-mid-titleOne {
+  font: var(--baseFont);
+  color: var(--gray10);
+  text-decoration: none;
+  display: flex; /*Para que el artista baje de la misma lineas*/
+  padding-inline-start: 4.75rem;
+}
+
+.nowPlaying-mid-title {
+  font: var(--baseFont);
+  color: var(--white);
+  text-decoration: none;
+  display: flex; /*Para que el artista baje de la misma lineas*/
+}
+
+.nowPlaying-artist {
+  font: var(--small);
+  color: var(--gray10);
+  text-decoration: none;
+}

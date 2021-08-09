@@ -1,0 +1,25 @@
+.playerControls-mid {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  /* inline-size: .25rem; */
+}
+
+.playerControls-mid-buttons {
+  /* border: 1px solid green; */
+  display: flex;
+  gap: 1rem;
+  /* inline-size: 2rem; */
+}
+
+
+@supports not(gap: .25rem) {
+    .playerControls-mid-buttons {
+    margin-bottom: .25rem;
+  }
+  .buttonIcon-mid.is-white {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

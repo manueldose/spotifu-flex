@@ -1,0 +1,28 @@
+@import './playlist-list-one.css';
+@import './playlist-list-two.css';
+@import './search.css';
+@import './filter.css';
+@import './button-play.css';
+@import './navigation.css';
+@import './header-one.css';
+@import './header-two.css';
+@import './sticky.css';
+
+
+.page {
+  padding-inline-end: 2em;
+  padding-inline-start: 2em;
+  padding-block-end: 2em;
+}
+
+.page-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.page .header {
+  margin-block-end: 1rem;
+  margin-inline-end: -1.5rem;
+  margin-inline-start: -1.5rem;
+}

@@ -1,42 +1,89 @@
-.playlistA {
+.playlistA-mid {
+  display: flex;
+  inline-size: 10.1rem;
+  min-inline-size: 10.1rem;
   /* border: 1px solid red; */
-  inline-size: 13em;
-  padding: 1rem;
-  border-radius: .25rem;
-  background: var(--gray40);
+  justify-content:end;
+  align-items: center;
   box-sizing: border-box;
   transition: .3s background;
 }
-/*Focus within ppara seleccionar con tab el boton. Elemnto hijo interfiere en padre*/
+
+.playlistA-mid-date {
+  display: flex;
+  gap: .75rem;
+  inline-size: 8.75rem;
+  min-inline-size: 8.75rem;
+  /* border: 1px solid red; */
+  /* border-radius: .25rem; */
+  justify-content:start;
+  align-items: center;
+  box-sizing: border-box;
+  transition: .3s background;
+}
+
+.playlistA-mid-dateicon {
+  display: flex;
+  gap: 3.5rem;
+  inline-size: 8.75rem;
+  /* border: 1px solid red; */
+  /* padding-inline-start: .625rem; */
+  /* border-radius: .25rem; */
+  justify-content:start;
+  align-items: center;
+  box-sizing: border-box;
+  transition: .3s background;
+}
+
+.playlistA-mid-day {
+  display: flex;
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: .5rem;
+  justify-content:start;
+  align-items: center;
+  font: var(--baseFont);
+  color: var(--gray10);
+}
+.playlistA-mid-time {
+  display: flex;
+  /* border: 1px solid red; */
+  margin: 0;
+  justify-content:center;
+  align-items: center;
+  font: var(--baseFont);
+  color: var(--gray10);
+}
+/*Focus within para seleccionar con tab el boton. Elemnto hijo interfiere en padre*/
 .playlistA:hover, .playlistA:focus-within {
   cursor: pointer;
   background: var(--gray30);
 }
 
-.playlistA-cover img {
+/* .playlistA-cover img {
   vertical-align: middle;
-  /*Ajustamos la imagen para posibles resizes*/
+  Ajustamos la imagen para posibles resizes
   inline-size: 100%;
   block-size: auto;
-}
+} */
 
-.playlistA-cover {
+/* .playlistA-cover {
   position: relative;
   border-radius: .75rem;
   overflow: hidden;
   margin-block-end: 1rem;
-}
+} */
 
-.playlistA button {
+/* .playlistA button {
   position: absolute;
   inset-inline-end: .5rem;
   inset-block-end: .5rem;
-  /* display: none; */
+  display: none;
   opacity: 0%;
   transform: translateY(.5rem);
   will-change: opacity, transform;
   transition: .3s opacity, .3s transform;
-}
+} */
 
 .playlistA:hover .playlistA-cover button,
 .playlistA:focus-within .playlistA-cover button {
@@ -48,6 +95,35 @@
 .playlistA-title {
   font: var(--baseFontBold);
   color: var(--white);
+  margin: 0;
+}
+
+.playlistA-mid-title {
+  font: var(--baseFont);
+  color: var(--white);
+  margin: 0;
+}
+
+.playlistA-mid-titleOne {
+  font: var(--baseFont);
+  color: var(--gray10);
+  display: flex; /*Para que el artista baje de la misma lineas*/
+}
+
+.playlistA-mid-iconday, .playlistA-mid-icontime {
+  display: flex;
+  border: none;
+  padding: 0;
+  background: none;
+  color: var(--gray10);
+  font-size: 1rem;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.playlistA-mid-date {
+  font: var(--baseFont);
+  color: var(--gray10);
   margin: 0;
 }
 

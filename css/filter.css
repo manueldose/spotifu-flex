@@ -1,0 +1,35 @@
+.filter {
+  position: relative;
+  flex: 1;
+  /* border: 1px solid red; */
+  margin: 1rem;
+}
+
+.filter i {
+  position: absolute;
+  font-size: 1rem;
+  inset-inline-start: .5rem;
+  inset-block-start: calc(50% - .5rem);
+  block-size: 1rem;
+  color: var(--gray10);
+}
+
+.filter input {
+  font: var(--baseFont);
+  color: var(--gray10);
+  border-radius: 1.25rem;
+  background: transparent;
+  border: none;
+  /* max-inline-size: 22rem; */
+  inline-size: 100%;
+  padding: .5rem;
+  padding-inline-start: 2rem;
+}
+
+.filter:focus-within i {
+  color: var(--gray10);
+}
+
+.filter input::-webkit-input-placeholder {
+  color: var(--gray10);
+}

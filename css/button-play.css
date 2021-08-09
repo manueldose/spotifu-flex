@@ -1,0 +1,25 @@
+.buttonPlay {
+  inline-size: 9.5rem;
+  block-size: 2rem;
+  background: var(--primary);
+  border-radius: 1.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+
+.buttonPlay:active {
+  transform: scale(.95);
+}
+
+.buttonPlay:hover:is([class*='is-']) {
+  box-shadow: 0 8px 8px rgba(0, 0, 0, .3);
+}
+
+.buttonPlay:focus-within i {
+  color: var(--gray30);
+}
+
+.buttonPlay input::-webkit-input-placeholder {
+  color: var(--gray10);
+}
