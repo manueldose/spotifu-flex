@@ -89,24 +89,31 @@
   }
 }
 
+
 @media screen and (min-width: 768px) {
   .playlistList-container-mid {
-    gap: 5rem;
+    gap: 6rem;
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .playlistList-container-mid {
+    gap: 8rem;
+  }
+}
 
 @media screen and (min-width: 1440px) {
   .playlistList-container-mid {
-    gap:7rem;
+    gap: 10rem;
   }
 }
 
-@media screen and (min-width: 1445px) {
+@media screen and (min-width: 1603px) {
   .playlistList-container-mid {
-    gap: 23rem;
+    gap: 20rem;
   }
 }
+
 
 @media screen and (min-width: 2560px) {
   .playlistList-container-mid {

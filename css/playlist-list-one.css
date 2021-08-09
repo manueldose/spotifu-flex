@@ -95,28 +95,3 @@
     margin-inline-end: 25rem;
   }
 }
-
-@media screen and (min-width: 768px) {
-  .playlistList-container-mid {
-    gap: 5rem;
-  }
-}
-
-
-@media screen and (min-width: 1440px) {
-  .playlistList-container-mid {
-    gap:7rem;
-  }
-}
-
-@media screen and (min-width: 1445px) {
-  .playlistList-container-mid {
-    gap: 23rem;
-  }
-}
-
-@media screen and (min-width: 2560px) {
-  .playlistList-container-mid {
-    gap: 23rem;
-  }
-}
