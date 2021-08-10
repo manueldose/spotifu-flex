@@ -1,5 +1,38 @@
-.body-one {
+.body {
   background: var(--gray50);
+  color: var(--gray10);
+  font: var(--baseFont);
+  margin: 0;
+}
+
+.body-two {
+  /* background-image: url(); */
+  background: linear-gradient(181.17deg, rgba(47, 47, 47, 0) -35.3%, #171717 66.2%), url(../images/JimiHendrix.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--gray10);
+  font: var(--baseFont);
+  margin: 0;
+}
+
+.body-three {
+  /* background-image: url(); */
+  background: linear-gradient(181.17deg, rgba(47, 47, 47, 0) -35.3%, #171717 66.2%), url(../images/k-dot.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--gray10);
+  font: var(--baseFont);
+  margin: 0;
+}
+
+.body-four {
+  /* background-image: url(); */
+  background: linear-gradient(181.17deg, rgba(47, 47, 47, 0) -35.3%, #171717 66.2%), url(../images/Terror-live.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--gray10);
   font: var(--baseFont);
   margin: 0;

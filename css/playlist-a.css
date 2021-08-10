@@ -1,3 +1,13 @@
+.playlistA {
+  /* border: 1px solid red; */
+  inline-size: 13em;
+  padding: 1rem;
+  border-radius: .25rem;
+  background: var(--gray40);
+  box-sizing: border-box;
+  transition: .3s background;
+}
+
 .playlistA-mid {
   display: flex;
   inline-size: 10.1rem;
@@ -60,30 +70,30 @@
   background: var(--gray30);
 }
 
-/* .playlistA-cover img {
+.playlistA-cover img {
   vertical-align: middle;
-  Ajustamos la imagen para posibles resizes
+  /* Ajustamos la imagen para posibles resizes */
   inline-size: 100%;
   block-size: auto;
-} */
+}
 
-/* .playlistA-cover {
+.playlistA-cover {
   position: relative;
   border-radius: .75rem;
   overflow: hidden;
   margin-block-end: 1rem;
-} */
+}
 
-/* .playlistA button {
+ .playlistA button {
   position: absolute;
   inset-inline-end: .5rem;
   inset-block-end: .5rem;
-  display: none;
-  opacity: 0%;
+  /* display: none; */
+  opacity: 0;
   transform: translateY(.5rem);
   will-change: opacity, transform;
   transition: .3s opacity, .3s transform;
-} */
+}
 
 .playlistA:hover .playlistA-cover button,
 .playlistA:focus-within .playlistA-cover button {
@@ -110,6 +120,11 @@
   display: flex; /*Para que el artista baje de la misma lineas*/
 }
 
+.playlistA-description {
+  font: var(--baseFont);
+  margin: 0;
+}
+
 .playlistA-mid-iconday, .playlistA-mid-icontime {
   display: flex;
   border: none;
@@ -124,10 +139,5 @@
 .playlistA-mid-date {
   font: var(--baseFont);
   color: var(--gray10);
-  margin: 0;
-}
-
-.playlistA-description {
-  font: var(--baseFont);
   margin: 0;
 }

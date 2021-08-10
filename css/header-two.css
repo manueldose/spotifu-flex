@@ -10,6 +10,18 @@
   backdrop-filter: blur(5px);/*hace blur a los elementos posteriores al header*/
 }
 
+.header-minblur {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 1rem;
+  padding-inline-start: 1.5rem;
+  padding-inline-end: 1.5rem;
+  padding-block-start: 1rem;
+  padding-block-end: 1.5rem;
+  align-items: center;
+  backdrop-filter: blur(2px);/*hace blur a los elementos posteriores al header*/
+}
+
 
 
 @supports not(backdrop-filter: blur(5px)) {
